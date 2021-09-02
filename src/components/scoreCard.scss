@@ -1,0 +1,58 @@
+.scorecard__logo{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding:10px;
+    width:45%;
+    margin-left:10px;
+    margin-top:10px;
+    border-right:1px solid  rgb(235, 228, 228);
+    img {
+        width: 50px;
+        height: 50px;
+       
+        margin-right:20px;
+        margin-bottom:20px;
+        
+     }
+     &__count{
+         display: flex;
+         
+         width:auto;
+         height:auto;
+         padding:4px 10px;
+         background-color: rgb(255, 217, 215);
+         border-radius: 5px;
+         &__text{
+             font-size:10px;
+             color:rgb(156, 37, 33)
+         }
+     }
+}
+.scorecard__description{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+    width:55%;
+    justify-content: space-around;
+    align-items: center;
+    &__score{
+        font-size: 25px;
+        font-weight: 600;
+    }
+    &__title{
+        font-size: 12px;
+        font-weight: 500;
+    }
+    &__rating{
+        font-size: 13px;
+        font-weight: 300;
+        height:auto;
+        width:auto;
+        color:white;
+       padding: 3px;
+       
+       border-radius:5px;
+        background-color: rgb(18, 204, 18);
+    }
+}

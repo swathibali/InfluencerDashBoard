@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
 
+import { useState } from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
+import './app.scss';
+import AddPostLink from './components/AddPostLink';
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import { AppDetailsContext } from './contexts/AppDetailsContext';
+import data from './data';
+import MyCampaigns from './pages/MyCampaigns';
+
+const Layout = ({ children }) => {
+
+  const [appDetails, setAppDetails] = useState(data?.socialmedia?.instagram);
+  const value = { appDetails, setAppDetails };
+
+  return (
+    <AppDetailsContext.Provider value={value}>
+
+      <div className='app'>
+
+        <div className="header"> <Header /></div>
+        <div className="sidebar"><Sidebar /> </div>
+        {children}
+      </div>
+    </AppDetailsContext.Provider>
+  )
+}
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+
+      <Route path='/' exact>
+        <Layout>
+          <MyCampaigns />
+        </Layout>
+
+      </Route>
+
+    </Router>
   );
 }
 
