@@ -32,7 +32,7 @@ const AddPostLink = ({isModalOpen,addPostLink}) => {
             <input type="text" placeHolder ="http://www.instagram.com/qyhgd7236"/>
             </div>
            <div className="butns">
-           <button onClick={addPostLink} className='close'>Close</button>
+           <button onClick={addPostLink} className='close'>Cancel</button>
             <button type="submit" onClick={addPostLink} >Submit</button>
            </div>
             
