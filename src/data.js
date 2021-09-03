@@ -72,7 +72,7 @@ import moment from "moment";
         youtube:{
             name:"youtube",
             img:"http://pngimg.com/uploads/youtube/youtube_PNG2.png",
-            mesageCount:150,
+            mesageCount:128,
             totalEngagementScore:7.05,
             rating:'Excellent',
             totalViews:56,
@@ -84,7 +84,7 @@ import moment from "moment";
         facebook:{
             name:"facebook",
             img:"https://png.pngtree.com/png-clipart/20190613/original/pngtree-facebook--icon-png-round-corner-png-image_3562016.jpg",
-            mesageCount:150,
+            mesageCount:310,
             totalEngagementScore:8.06,
             rating:'Excellent',
             totalViews:157,
