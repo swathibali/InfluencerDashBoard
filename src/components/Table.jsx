@@ -1,8 +1,6 @@
 import React from 'react';
 import data from '../data';
 import './table.scss';
-import ShowMoreText from 'react-show-more-text';
-import AddPostLink from './AddPostLink';
 
 const Table = () => {
   return (

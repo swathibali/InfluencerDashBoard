@@ -9,7 +9,6 @@ const Sidebar = () => {
   const [app,setApp]=useState('instagram')
   
   const display = (e) => {
-    console.log(data.socialmedia[e.target.value],"value");
     setApp(e.target.value)
     setAppDetails(data.socialmedia[e.target.value])
   

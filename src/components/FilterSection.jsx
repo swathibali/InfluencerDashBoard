@@ -1,16 +1,12 @@
 import { useState } from 'react';
-import ReactDatePicker from 'react-datepicker';
-import { Link, Redirect, useHistory } from 'react-router-dom';
 import AddPostLink from './AddPostLink';
 import './filterSection.scss';
-import Calendar from '@lls/react-light-calendar'
 import '@lls/react-light-calendar/dist/index.css'
 
 
 const FilterSection = () => {
 
   const [isModalOpen,setModelOpen] = useState(false)
-  console.log(useHistory());
   const addPostLink = () =>{
    
     setModelOpen(!isModalOpen)

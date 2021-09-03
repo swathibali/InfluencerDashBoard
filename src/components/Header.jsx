@@ -1,10 +1,8 @@
 import React from 'react'
 import PermIdentityOutlinedIcon from '@material-ui/icons/PermIdentityOutlined';
-import AndroidOutlinedIcon from '@material-ui/icons/AndroidOutlined';
 import NotificationsRoundedIcon from '@material-ui/icons/NotificationsRounded';
 import './header.scss'
-import { Link, NavLink, useLocation } from 'react-router-dom';
-import AddPostLink from './AddPostLink';
+import { NavLink, useLocation } from 'react-router-dom';
 
 const Header = () => {
     const {pathname} = useLocation();

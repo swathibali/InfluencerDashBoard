@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './app.scss';
-import AddPostLink from './components/AddPostLink';
 import Header from './components/Header';
 import Sidebar from './components/Sidebar';
 import { AppDetailsContext } from './contexts/AppDetailsContext';
